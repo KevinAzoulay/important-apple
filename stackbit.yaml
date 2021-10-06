@@ -1,0 +1,31 @@
+stackbitVersion: "~0.3.0"
+ssgName: "custom"
+buildCommand: "npx @11ty/eleventy"
+publishDir: "public"
+staticDir: "static"
+uploadDir: "images"
+pagesDir: "site"
+metadata:
+  title: "NEWAVE"
+  description: "Theme created in Webflow and converted with Udesly"
+models:
+  category:
+    type: "page"
+    label: "Case Study Categories"
+    urlPath: "/category/{slug}"
+  blog:
+    type: "page"
+    label: "Blog Posts"
+    urlPath: "/blog/{slug}"
+  feed:
+    type: "page"
+    label: "Feeds"
+    urlPath: "/feed/{slug}"
+  studycase:
+    type: "page"
+    label: "Nos Projets"
+    urlPath: "/studycase/{slug}"
+  team:
+    type: "page"
+    label: "Notre Teams"
+    urlPath: "/team/{slug}"
